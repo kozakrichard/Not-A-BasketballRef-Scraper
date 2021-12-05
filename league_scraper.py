@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 
+#For now, enter one of these into the stats_type variable
 #totals-team, advanced-team, per_game-team, per_poss-team, shooting-team, all_awards
 
 stats_type = "per_poss-team"
@@ -28,8 +29,10 @@ for year in range(start_year, end_year):
     elif page.status_code==404:
         print("Data does not exist")
         
-    df = pd.read_html(str(table))[0]
-    df.to_csv(f"{year} {stats_type} totals.csv")
+df = pd.read_html(str(table))[0]
+
+#A csv file containing the data scraped will be created in this working directory
+df.to_csv(f"{year} {stats_type} totals.csv")
 
 
 
