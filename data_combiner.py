@@ -1,3 +1,7 @@
+### Does as the name says, combines all the csv files in your current working directory. 
+### Be careful to change the name of the files as running this multiple times will overwrite data.
+### Intended for combining stats across the seasons of the NBA into a single source. 
+
 import os
 import glob
 import pandas as pd
