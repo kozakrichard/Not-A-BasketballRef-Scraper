@@ -30,8 +30,8 @@ elif stat_to_track == 5:
     stats_type = "shooting-team"
 elif stat_to_track == 6:
     stats_type = "all_awards"
-#    while stat_to_track != 1 and stat_to_track != 2 and stat_to_track != 3 and stat_to_track != 4 and stat_to_track != 5 and stat_to_track != 6:
-    #stat_to_track = int(input("Let's try that again. Enter a valid choice between 1 and 6."))
+while stat_to_track != 1 and stat_to_track != 2 and stat_to_track != 3 and stat_to_track != 4 and stat_to_track != 5 and stat_to_track != 6:
+    stat_to_track = int(input("Let's try that again. Enter a valid choice between 1 and 6: "))
 
 
 start_year = int(input("Enter year to begin scraping from. Begins from 1950. Data will include this year: "))
@@ -39,7 +39,7 @@ while start_year < 1950 or start_year > 2022:
     start_year = int(input("Invalid year. Try again between 1950 and 2022: "))
 
 end_year = int(input("Enter end year of scraping. Ends at 2023. Data will not include this year: "))
-while end_year < 1950 or end_year > 2023:
+while end_year < 1950 or end_year > 2023 or end_year < start_year:
     end_year = int(input("Invalid year. Try again between 1950 and 2022: "))
 
 
