@@ -6,7 +6,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import time
 
 #For now, enter one of these into the stats_type variable
 #totals-team, advanced-team, per_game-team, per_poss-team, shooting-team, all_awards
