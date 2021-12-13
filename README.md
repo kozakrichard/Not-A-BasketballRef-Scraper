@@ -1,4 +1,4 @@
-# Not-A-BasketballRef-Scraper
+# Not-A-SportsRef-Scraper
 An in the works scraper for Sports-Reference. Goal is to be able to collect all sorts of sports data quickly and easily right from the terminal. Currently working on NBA and NFL data.
 <p>Started with the need to collect data for a university project. </p> I will try to get this working with
 lots of different data tables so that others
